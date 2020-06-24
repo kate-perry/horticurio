@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Yeseva+One&display=swap');
+
+$font-title:  'Yeseva One', cursive;
+$font-stack: 'Lato', sans-serif;
+$primary-color: #36494e;
+$secondary-color: #fe654f;
+$tertiary-color: #7a9a68;
+$quaternary-color: #d6efff;
+$background-color: #fefeff;
+$background-plate-color: rgba(214, 239, 255, .4);
+
+.app {
+    text-align: center;
+}
+
+.body-plate {
+    background-color: $background-plate-color;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 1em;
+}
+
+.body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    padding: 1em;
+    min-width: 40em;
+    font-size: calc(10px + 1vmin);
+    opacity: 1;
+}
+
+.header {
+    font: 100% $font-stack;
+    color: $secondary-color;
+    background: url("/monstera-right-transparent.png"), url("/monstera-left.png");
+    background-size: contain;
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    background: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    font-size: calc(10px + 2vmin);
+    color: $background-color;
+}
+
+.title {
+    font: 200% $font-title;
+    background-color: $secondary-color;
+    color: $background-color;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.link {
+    font: 100% $font-stack;
+    color: $tertiary-color;
+}

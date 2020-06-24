@@ -15,8 +15,8 @@
 
 .App-header {
   background: url("/monstera-left.jpg"), url("/monstera-right.jpg");
-  background-size:contain;
-  background-position:left top, right bottom;
+  background-size: contain;
+  background-position: left top, right bottom;
   background-repeat: no-repeat;
   background: cover;
   min-height: 100vh;
@@ -26,6 +26,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-name {
+  color: red
+}
+
+.App-body {
+  background: blue;
 }
 
 .App-link {
