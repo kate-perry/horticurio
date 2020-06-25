@@ -5,12 +5,12 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import MuiTheme from './MuiTheme.js';
 
-function Gallery() {
+function About() {
   return (
     <MuiThemeProvider theme={MuiTheme}>
       <div className="app" >
               <p>
-                Welcome to the Gallery!
+                Welcome to About!
               </p>
               <Button href="./Gallery" target="_blank"
                 rel="noopener noreferrer" color="secondary">hello</Button>
@@ -27,4 +27,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default About;
