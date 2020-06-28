@@ -12,7 +12,7 @@ function About() {
               <p>
                 Welcome to About!
               </p>
-              <Button href="./Gallery" target="_blank"
+              <Button target="_blank"
                 rel="noopener noreferrer" color="secondary">hello</Button>
               <a
                 className="link"

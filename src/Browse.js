@@ -54,20 +54,21 @@ const tiledata = [
   
   ];
 
-function Gallery() {
+function Browse() {
   return (
     <MuiThemeProvider theme={MuiTheme}>
       <div className="app" >
-        <GridList cellHeight={160} className='grid-list' cols={3}>
+      Welcome to Browse!
+        {/* <GridList cellHeight={160} className='grid-list' cols={3}>
           {tiledata.map((tile) => (
             <GridListTile key={tile.img} cols={tile.cols || 1}>
               <img src={tile.img} alt={tile.title} />
             </GridListTile>
           ))}
-        </GridList>
+        </GridList> */}
       </div>
     </MuiThemeProvider >
   );
 }
 
-export default Gallery;
+export default Browse;
