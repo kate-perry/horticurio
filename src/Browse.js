@@ -14,7 +14,7 @@ function Browse() {
       <div className="app" >
         <GridList cellHeight={300} spacing={10} className='grid-list' cols={3}>
           {tiledata.map((tile) => (
-            <GridListTile key={tile.img} cols={tile.cols || 1}>
+            <GridListTile component="button" className='grid-list' key={tile.img} cols={tile.cols || 1}>
               <img src={tile.img} alt={tile.title} />
             </GridListTile>
           ))}

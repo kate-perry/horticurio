@@ -63,6 +63,8 @@ $transparent: rgba(0,0,0,0);
 }
 
 .grid-list {
+    border-width: 0;
+    background-color: $transparent;
     // width: 150;
     // height: 150;
 }
