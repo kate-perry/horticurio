@@ -1,12 +1,12 @@
 import React from 'react';
-import './styles.scss';
+import '../styles.scss';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-import MuiTheme from './MuiTheme.js';
+import MuiTheme from '../MuiTheme.js';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import { tiledata } from './plantdata.js';
+import { tiledata } from '../plantdata.js';
 
 function Browse() {
   return (
