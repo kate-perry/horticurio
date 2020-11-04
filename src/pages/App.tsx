@@ -1,14 +1,12 @@
 import React from 'react';
-import './styles.scss';
+import '../shared/styles/styles.scss';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-import MuiTheme from './MuiTheme.js';
-import Browse from './Pages/Browse.js';
-import Shop from './Pages/Shop.js';
-import About from './Pages/About.js';
-import Track from './Pages/Track.js';
-
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import MuiTheme from '../shared/styles/MuiTheme.js';
+import Browse from './Browse';
+import About from './About';
+import headerlogo from '../shared/static/headerlogo.png';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,12 +20,12 @@ function App() {
       <MuiThemeProvider theme={MuiTheme}>
         <div className="app" >
           <header className="header">
-            <h1 className="title">horticurio</h1>
+            <div className="header-container" >
+            <img src={headerlogo} className="header-logo--white" alt="logo"/>
+            </div>
             <ButtonGroup size="large" variant="text" color="primary" aria-label="text primary button group">
-              <Button component={Link} to="/browse">Browse</Button>
-              <Button component={Link} to="/shop">Shop</Button>
-              <Button component={Link} to="/tracker">Tracker</Button>
               <Button component={Link} to="/about">About</Button>
+              <Button component={Link} to="/browse">Browse</Button>
             </ButtonGroup>
             <div className="body-plate">
               <body className="body">
@@ -38,17 +36,10 @@ function App() {
                   <Route path="/browse">
                     <Browse />
                   </Route>
-                  <Route path="/shop">
-                    <Shop />
-                  </Route>
-                  <Route path="/tracker">
-                    <Track />
-                  </Route>
                   <Route path="/">
-                    <Browse />
+                    <About />
                   </Route>
                 </Switch>
-
               </body>
             </div>
           </header>

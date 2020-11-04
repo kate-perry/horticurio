@@ -35,11 +35,6 @@ $transparent: rgba(0,0,0,0);
 .header {
     font: 100% $font-stack;
     color: $secondary-color;
-    background: url("/monstera-right-transparent.png"), url("/monstera-left.png");
-    background-size: contain;
-    background-position: right bottom, left top;
-    background-repeat: no-repeat;
-    background: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,6 +42,22 @@ $transparent: rgba(0,0,0,0);
     justify-content: top;
     font-size: calc(10px + 2vmin);
     color: $background-color;
+}
+
+.header-container {
+    background-color: $secondary-color;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.header-logo {
+    height: 10vmax;
+    &--white {
+        height: 10vmax;
+        -webkit-filter: invert(100%) saturate(0%) brightness(150%);
+        filter: invert(100%) saturate(0%) brightness(150%);
+    }
 }
 
 .title {

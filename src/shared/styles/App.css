@@ -13,12 +13,12 @@
   }
 }
 
+.header-logo {
+  height: 20vmax;
+}
+
 .App-header {
-  background: url("/monstera-left.jpg"), url("/monstera-right.jpg");
-  background-size: contain;
-  background-position: left top, right bottom;
-  background-repeat: no-repeat;
-  background: cover;
+  background-color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,14 +26,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-name {
-  color: red
-}
-
-.App-body {
-  background: blue;
 }
 
 .App-link {
