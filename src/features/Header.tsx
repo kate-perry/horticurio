@@ -2,6 +2,7 @@ import React from "react";
 import "../shared/styles/styles.scss";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
 import headerlogo from "../shared/static/header-logo-clay.svg";
 import history from "../shared/utils/history";
 
@@ -11,8 +12,10 @@ function Header() {
       <Grid container spacing={1}>
         <Grid item xs={12} />
         <Grid item xs={12}>
-          <Button onClick={() => history.push("/about")}>About</Button>
-          <Button onClick={() => history.push("/browse")}>Browse</Button>
+          <ButtonGroup variant="text" color="secondary" >
+            <Button onClick={() => history.push("/about")}>About</Button>
+            <Button onClick={() => history.push("/browse")}>Browse</Button>
+          </ButtonGroup>
         </Grid>
         <Grid item xs={12}>
           <img
