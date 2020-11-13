@@ -7,9 +7,18 @@ $secondary-color:rgb(231, 206, 193);
 $tertiary-color: rgb(206, 148, 75);
 $quaternary-color:  rgb(108, 100, 132);
 $quinary-color: rgb(109, 132, 144);
-$background-color: rgb(246, 238, 237);
-$background-plate-color:  rgba(45, 103, 100, .4);
+$background-color: rgb(231, 206, 193);
+$background-plate-color: rgba(246, 238, 237, .4);
 $transparent: rgba(0,0,0,0);
+
+html,
+body {
+    margin: 0;
+}
+
+html {
+    background: $background-plate-color;
+}
 
 .app {
     text-align: center;
@@ -43,6 +52,10 @@ $transparent: rgba(0,0,0,0);
     justify-content: top;
     font-size: calc(10px + 2vmin);
     color: $background-color;
+    &--bar {
+        background-color:  rgb(223, 126, 96);
+        padding: .15rem;
+    }
 }
 
 .header-container {
@@ -77,6 +90,4 @@ $transparent: rgba(0,0,0,0);
 .grid-list {
     border-width: 0;
     background-color: $transparent;
-    // width: 150;
-    // height: 150;
 }

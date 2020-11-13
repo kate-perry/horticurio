@@ -1,6 +1,8 @@
 import React from "react";
 import "../shared/styles/styles.scss";
 import Grid from "@material-ui/core/Grid";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Button";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import headerlogo from "../shared/static/header-logo-clay.svg";
@@ -9,14 +11,15 @@ import history from "../shared/utils/history";
 function Header() {
   return (
     <>
-      <Grid container spacing={1}>
-        <Grid item xs={12} />
-        <Grid item xs={12}>
-          <ButtonGroup variant="text" color="secondary" >
+      <Grid container spacing={0} justify="center">
+      <Grid item xs={12} className="header--bar"/>
+        <Grid item xs={12} className="header--bar">
+          <ButtonGroup variant="text">
             <Button onClick={() => history.push("/about")}>About</Button>
             <Button onClick={() => history.push("/browse")}>Browse</Button>
           </ButtonGroup>
         </Grid>
+        <Grid item xs={12} className="header--bar"> </Grid>
         <Grid item xs={12}>
           <img
             src={headerlogo}
