@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './shared/styles/index.css';
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import MuiTheme from './shared/styles/MuiTheme';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <MuiThemeProvider theme={MuiTheme}>
     <App />
+    </MuiThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

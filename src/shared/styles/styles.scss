@@ -2,12 +2,13 @@
 
 $font-title:  'Yeseva One', cursive;
 $font-stack: 'Lato', sans-serif;
-$primary-color: #36494e;
-$secondary-color: #fe654f;
-$tertiary-color: #7a9a68;
-$quaternary-color: #d6efff;
-$background-color: #fefeff;
-$background-plate-color: rgba(214, 239, 255, .4);
+$primary-color: rgb(223, 126, 96);
+$secondary-color:rgb(231, 206, 193);
+$tertiary-color: rgb(206, 148, 75);
+$quaternary-color:  rgb(108, 100, 132);
+$quinary-color: rgb(109, 132, 144);
+$background-color: rgb(246, 238, 237);
+$background-plate-color:  rgb(246, 238, 237);
 $transparent: rgba(0,0,0,0);
 
 .app {
@@ -52,9 +53,9 @@ $transparent: rgba(0,0,0,0);
 }
 
 .header-logo {
-    height: 10vmax;
+    height: 5rem;
     &--white {
-        height: 10vmax;
+        height: 5rem;
         -webkit-filter: invert(100%) saturate(0%) brightness(150%);
         filter: invert(100%) saturate(0%) brightness(150%);
     }
