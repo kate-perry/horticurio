@@ -11,7 +11,10 @@ export default createMuiTheme({
     },
   },
   typography: {
-    fontFamily: ["Lato"].join(","),
+    fontFamily: ["Open Sans"].join(","),
+    h1: {
+      fontFamily: ["Lora"].join(","),
+    },
     button: {
       textTransform: "none",
     },

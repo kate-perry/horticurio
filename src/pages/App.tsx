@@ -12,9 +12,7 @@ class App extends Component<IProps, IState> {
     return (
       <div className="app">
         <Header />
-        <div className="body-plate">
-          <Routes />
-        </div>
+        <Routes />
       </div>
     );
   }
