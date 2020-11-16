@@ -11,7 +11,6 @@ class Browse extends Component<IProps, IState> {
   render() {
     return (
       <>
-        <div className="space--xl" />
         <Grid
           container
           direction="row"

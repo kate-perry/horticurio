@@ -12,6 +12,7 @@ class App extends Component<IProps, IState> {
     return (
       <div className="app">
         <Header />
+        <div className="space--xl" />
         <Routes />
       </div>
     );
