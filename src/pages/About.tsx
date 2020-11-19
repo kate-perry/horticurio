@@ -10,10 +10,12 @@ interface IState {}
 class About extends Component<IProps, IState> {
   render() {
     return (
-      <div className="body-plate">
+      <>
+        <Typography color="secondary" variant="h1">Welcome!</Typography>
+        <div className="space--xl" />
+        <div className="body-plate">
           <Grid container spacing={0}>
             <Grid item xs={12}>
-              <Typography variant="h1">Welcome!</Typography>
               <Button color="secondary">hello</Button>
               <a
                 className="link"
@@ -25,7 +27,8 @@ class About extends Component<IProps, IState> {
               </a>
             </Grid>
           </Grid>
-      </div>
+        </div>
+      </>
     );
   }
 }

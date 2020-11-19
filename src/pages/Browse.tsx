@@ -35,7 +35,7 @@ class Browse extends Component<IProps, IState> {
         </Grid>
         <div className="space--xl" />
         <div className="body-plate">
-          <Typography variant="h1">Some dramatic text...</Typography>
+          <Typography color="secondary" variant="h1">Some dramatic text...</Typography>
         </div>
         <div className="space--xl" />
         <Grid
