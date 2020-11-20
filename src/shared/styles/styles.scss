@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans&display=swap");
+
+//font-family: 'Lora', serif;
+//font-family: 'Open Sans', sans-serif;
+
+$font-title: "Lora", serif;
+$font-stack: "Open Sans", sans-serif;
+$primary-color: rgb(45, 103, 100);
+$secondary-color: rgb(231, 206, 193);
+$tertiary-color: rgb(206, 148, 75);
+$quaternary-color: rgb(108, 100, 132);
+$quinary-color: rgb(109, 132, 144);
+$background-color: rgb(255, 250, 245);
+$background-plate-color: rgb(252, 233, 210);
+$transparent: rgba(0, 0, 0, 0);
+
+html,
+body {
+  margin: 0;
+  min-height: 50rem;
+  background: $background-color;
+}
+
+.section1 {
+  background-color: $secondary-color;
+}
+
+.backgroundsection {
+  background-image: url("../static/hoya.jpg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  height: 100rem;
+}
+
+.top-left-shadow {
+  width: 100%;
+  -webkit-box-shadow: -1rem -1rem 0rem 0rem $primary-color; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: -1rem -1rem 0rem 0rem $primary-color; /* Firefox 3.5 - 3.6 */
+  box-shadow: -1rem -1rem 0rem 0rem $primary-color;
+}
+
+.bottom-right-shadow {
+  width: 100%;
+  -webkit-box-shadow: 1rem 1rem 0rem 0rem $primary-color; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 1rem 1rem 0rem 0rem $primary-color; /* Firefox 3.5 - 3.6 */
+  box-shadow: 1rem 1rem 0rem 0rem $primary-color;
+}
+
+.thick-tight-shadow {
+  width: 100%;
+  -webkit-box-shadow: 0rem 0rem 0rem 1rem $primary-color; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0rem 0rem 0rem 1rem $primary-color; /* Firefox 3.5 - 3.6 */
+  box-shadow: 0rem 0rem 0rem 1rem $primary-color;
+}
+
+.thin-loose-shadow {
+  width: 100%;
+  -webkit-box-shadow: 0rem 0rem 0rem 0.75rem $background-color,
+    0rem 0rem 0rem 1rem $primary-color; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0rem 0rem 0rem 0.75rem $background-color,
+    0rem 0rem 0rem 1rem $primary-color; /* Firefox 3.5 - 3.6 */
+  box-shadow: 0rem 0rem 0rem 0.75rem $background-color,
+    0rem 0rem 0rem 1rem $primary-color;
+}
+
+.app {
+  text-align: center;
+  width: 100%;
+}
+
+.body-plate {
+  background-color: $background-plate-color;
+  width: 100%;
+}
+
+.body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  padding: 1em;
+  min-width: 40em;
+  font-size: calc(10px + 1vmin);
+  opacity: 1;
+}
+
+.image {
+  width: 100%;
+}
+
+.header {
+  font: 100% $font-stack;
+  color: $secondary-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: $background-color;
+  &--bar {
+    background-color: $transparent;
+    padding: 0.15rem;
+  }
+}
+
+.header-container {
+  background-color: $secondary-color;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.header-logo {
+  height: 5rem;
+  &--white {
+    height: 5rem;
+    -webkit-filter: invert(100%) saturate(0%) brightness(150%);
+    filter: invert(100%) saturate(0%) brightness(150%);
+  }
+}
+
+.title {
+  font: 200% $font-title;
+  background-color: $secondary-color;
+  color: $background-color;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.link {
+  font: 100% $font-stack;
+  color: $tertiary-color;
+}
+
+.grid-list {
+  border-width: 0;
+  background-color: $transparent;
+}
+
+.space {
+  &--s {
+    height: 0.25rem;
+  }
+  &--m {
+    height: 0.5rem;
+  }
+  &--l {
+    height: 1rem;
+  }
+  &--xl {
+    height: 2rem;
+  }
+}
